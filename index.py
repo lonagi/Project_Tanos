@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#file version 1
 print "Content-type: text/html\n"
 print "\n\n"
 print "<html>"
