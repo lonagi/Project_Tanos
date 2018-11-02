@@ -1,5 +1,8 @@
 #!/usr/bin/python
 #file version 4
+import cgi #Vstavlaem module
+form = cgi.FieldStorage() #Take vars from browser url ($_GET and $_POST) (What is Post and Get? We'll talk later)
+
 print "Content-type: text/html; charset=utf-8\n" #it is html
 print "\n\n" #breaking without html
 print "<html>" 
@@ -10,10 +13,27 @@ print "<title>Test</title>" #title , ok, you know. html
 print "</head>"
 print "<body>"
 print (
-"<div>"
-  "Hello world!" #my text
-  "<br>" #html breaking
-  "sos" #your text
+"<div class='my-5 container-fluid'>" #good margin, do not pay attention, Tanya )
+  "<div class='row'>"
+    "<div class='col-md-2'></div>"
+    "<div class='col-md-8 text-center'>"
+      "<h1>Hello world!<h1>"
+      "<h5>Type your id in p=</h5><br>"
+)
+
+p=form.getvalue("p") #TAKE ?p= from browser url
+
+#lol :)
+if p!='':
+	if p=='173':
+		print 'Sasha :)'
+	elif p=='1488':
+		print 'Tanya :)'
+
+print (
+  "</div>"
+    "<div class='col-md-2'></div>"
+  "</div>" #it is too margining
 "</div>"
 )
 print (
