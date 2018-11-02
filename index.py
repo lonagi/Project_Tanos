@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#file version 1
+#file version 2
 print "Content-type: text/html\n"
 print "\n\n"
 print "<html>"
@@ -13,3 +13,4 @@ print (
 )
 print "</body>"
 print "</html>"
+print()
