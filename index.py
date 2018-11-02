@@ -1,17 +1,17 @@
 #!/usr/bin/python
 #file version 3
-print "Content-type: text/html\n" #Показываем, что это html
-print "\n\n" #на новую строчку
+print "Content-type: text/html\n" #it is html
+print "\n\n" #breaking without html
 print "<html>" 
 print "<head>" 
-print "<title>Test</title>" #заголовок страницы
+print "<title>Test</title>" #title , ok, you know. html
 print "</head>"
 print "<body>"
 print (
 "<div>"
-  "Hello world!" #мой текст
-  "<br>" #отступ на новую строчку в html'е
-  "sos" #твой теперь тут
+  "Hello world!" #my text
+  "<br>" #html breaking
+  "sos" #your text
 "</div>"
 )
 print "</body>"
