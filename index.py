@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#file version 4
+#file version 5
 import cgi #Vstavlaem module
 form = cgi.FieldStorage() #Take vars from browser url ($_GET and $_POST) (What is Post and Get? We'll talk later)
 
@@ -19,6 +19,8 @@ print (
     "<div class='col-md-8 text-center'>"
       "<h1>Hello world!<h1>"
       "<h5>Type your id in p=</h5><br>"
+      "<b>А теперь <ins>важный вопрос</ins></b><br><br><br>
+      "<em style="color:white">Путин топ?</em>" #politota
 )
 
 p=form.getvalue("p") #TAKE ?p= from browser url
@@ -29,7 +31,10 @@ if p!='':
 		print 'Sasha :)'
 	elif p=='1488':
 		print 'Tanya :)'
-
+	elif p=='yes':
+		print 'KREMLEBOT ALERT'
+	else:
+		print 'za toboi uzhe viehali'
 print (
   "</div>"
     "<div class='col-md-2'></div>"
