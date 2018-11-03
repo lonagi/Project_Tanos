@@ -10,6 +10,16 @@ print "<head>"
 print '<link href="http://ex.nvg-team.com/bootstrap2.css" rel="stylesheet" type="text/css" media="all"/>\n'
 print '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
 print "<title>Test</title>"
+print(
+"<style>"
+"em{"
+"color:white;"
+"}"
+"em:hover{"
+"color:green;"
+"}"
+"</style>"
+)
 print "</head>"
 print "<body>"
 print (
@@ -20,7 +30,7 @@ print (
       "<h1>Hello world!<h1>"
       "<h5>Type your id in p=</h5><br>"
       "<b> and now... <ins>IMPORTANT QUESTION</ins></b><br><br><br>"
-      "<em style='color:white'>Putin top?</em>" #politota
+      "<em>Putin top?</em>" #politota
 )
 
 p=form.getvalue("p")
