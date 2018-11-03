@@ -26,7 +26,7 @@ print (
 p=form.getvalue("p")
 
 #lol :)
-if p!='':
+if p!=None: #suka!
 	if p=='173':
 		print 'Sasha :)'
 	elif p=='1488':
