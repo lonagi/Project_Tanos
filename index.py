@@ -1,19 +1,19 @@
 #!/usr/bin/python
 #file version 6
-import cgi #Vstavlaem module
-form = cgi.FieldStorage() #Take vars from browser url ($_GET and $_POST) (What is Post and Get? We'll talk later)
+import cgi
+form = cgi.FieldStorage()
 
-print "Content-type: text/html; charset=utf-8\n" #it is html
-print "\n\n" #breaking without html
+print "Content-type: text/html; charset=utf-8\n"
+print "\n\n"
 print "<html>" 
 print "<head>"
-print '<link href="http://ex.nvg-team.com/bootstrap2.css" rel="stylesheet" type="text/css" media="all"/>\n' #Connect bootstrap css
-print '<meta name="viewport" content="width=device-width, initial-scale=1">\n' #set size display 100%
-print "<title>Test</title>" #title , ok, you know. html
+print '<link href="http://ex.nvg-team.com/bootstrap2.css" rel="stylesheet" type="text/css" media="all"/>\n'
+print '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+print "<title>Test</title>"
 print "</head>"
 print "<body>"
 print (
-"<div class='my-5 container-fluid'>" #good margin, do not pay attention, Tanya )
+"<div class='my-5 container-fluid'>"
   "<div class='row'>"
     "<div class='col-md-2'></div>"
     "<div class='col-md-8 text-center'>"
@@ -23,7 +23,7 @@ print (
       "<em style='color:white'>Putin top?</em>" #politota
 )
 
-p=form.getvalue("p") #TAKE ?p= from browser url
+p=form.getvalue("p")
 
 #lol :)
 if p!='':
@@ -38,13 +38,13 @@ if p!='':
 print (
   "</div>"
     "<div class='col-md-2'></div>"
-  "</div>" #it is too margining
+  "</div>"
 "</div>"
 )
 print (
 "<footer>"
-"<script src='http://ex.nvg-team.com/jquery-3.3.1.js'></script>" #connect jquery
-"<script src='http://ex.nvg-team.com/bootstrap2.js'></script>" #connect bootstrap js framework
+"<script src='http://ex.nvg-team.com/jquery-3.3.1.js'></script>"
+"<script src='http://ex.nvg-team.com/bootstrap2.js'></script>"
 "</footer>"
 )
 print "</body>"
