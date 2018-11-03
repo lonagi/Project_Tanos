@@ -34,6 +34,7 @@ print (
 )
 
 p=form.getvalue("p")
+quest=form.getvalue("quest")
 
 #lol :)
 if p!=None: #suka!
@@ -45,6 +46,30 @@ if p!=None: #suka!
 		print 'KREMLEBOT ALERT'
 	else:
 		print 'za toboi uzhe viehali'
+		
+		
+print '<div><a class="btn btn-success" href="?quest=1">Click me :)</a></div><br/>'
+
+#V pythone net switch case :(
+if(quest=='1'):
+	print('Hi there! Do u want to pass my quest? 2 - Yes, 3 - No')
+elif(quest=='2'):
+	print('Ok. Are u woman? 4 - Yes, 5 - No')
+elif(quest=='4'):
+	print('Tanya, tell me. Do u like Sasha? 6 - Yes, 7 - No')
+elif(quest=='5'):
+	print('Sasha, tell me. Do u like Varenyki? 8 - Yes, 7 - No')
+elif(quest=='6'):
+	print('I consider, that u are wonderful. Am I right? 9 - Yes, 7 - No')
+elif(quest=='8'):
+	print('Do u like Tanya? Nya-nya. 9 - Yes, 3 - No')
+elif(quest=='9'):
+	print('Great!')	
+elif(quest=='3' or quest=='7'):
+	print('You are dead!')
+else:
+	print('Ti kuda idesh? aaaa????')
+
 print (
   "</div>"
     "<div class='col-md-2'></div>"
