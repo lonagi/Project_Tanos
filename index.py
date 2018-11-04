@@ -35,6 +35,7 @@ print (
 
 p=form.getvalue("p")
 quest=form.getvalue("quest")
+stringg=form.getvalue("string")
 
 #lol :)
 if p!=None: #suka!
@@ -70,6 +71,10 @@ elif(quest=='3' or quest=='7'):
 elif(quest!=None):
 	print('Ti kuda idesh? aaaa????')
 
+for i in stringg:
+	if(i=='a'):
+		print ' lolka '
+	
 print (
   "</div>"
     "<div class='col-md-2'></div>"
