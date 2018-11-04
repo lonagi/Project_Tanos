@@ -5,7 +5,7 @@ form = cgi.FieldStorage()
 
 print "Content-type: text/html; charset=utf-8\n"
 print "\n\n"
-print "<html>" 
+print "<html>"
 print "<head>"
 print '<link href="http://ex.nvg-team.com/bootstrap2.css" rel="stylesheet" type="text/css" media="all"/>\n'
 print '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
@@ -46,8 +46,8 @@ if p!=None: #suka!
 		print 'KREMLEBOT ALERT'
 	else:
 		print 'za toboi uzhe viehali'
-		
-		
+
+
 print '<div><a class="btn btn-success" href="?quest=1">Click me :)</a></div><br/>'
 
 #V pythone net switch case :(
@@ -64,10 +64,10 @@ elif(quest=='6'):
 elif(quest=='8'):
 	print('Do u like Tanya? Nya-nya. 9 - Yes, 3 - No')
 elif(quest=='9'):
-	print('Great!')	
+	print('Great!')
 elif(quest=='3' or quest=='7'):
 	print('You are dead!')
-else:
+elif(quest!=None):
 	print('Ti kuda idesh? aaaa????')
 
 print (
