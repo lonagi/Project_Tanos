@@ -18,6 +18,12 @@ print(
 "em:hover{"
 "color:green;"
 "}"
+"p{"
+"color:white;"
+"background-color:grey;"
+"padding:20px;"
+"display:table;"
+"}"
 "</style>"
 )
 print "</head>"
@@ -31,7 +37,7 @@ print (
       "<h5>Type your id in p=</h5><br>"
       "<b> and now... <ins>IMPORTANT QUESTION</ins></b><br><br><br>"
       "<em>Putin top?</em>" #politota
-)
+     )
 
 p=form.getvalue("p")
 quest=form.getvalue("quest")
@@ -74,7 +80,24 @@ elif(quest!=None):
 for i in stringg:
 	if(i=='a'):
 		print ' lolka '
-	
+
+print(
+"<p>ok so now you have to enter a string which contains 1 4 and 8 8 on chotnye places</p>"
+)
+
+counter = {}
+for s in stringg:
+    if string.index(s)%2==0:
+        if s == '4':
+            counter['4']+=1
+        if s == '8':
+            counter['8']+=1
+if (counter['4']==1) and (counter['8']==8):
+
+    print(
+    "<div style='color:red;'> YOU DID IT </div>"
+    )
+
 print (
   "</div>"
     "<div class='col-md-2'></div>"
