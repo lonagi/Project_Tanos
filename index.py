@@ -92,11 +92,12 @@ def countthis(test):
     counter={}
     counter['4']=0
     counter['8']=0
-    for t in test:
-        if test.index(t)%2==0:
-            if t =='4':
+    i=0
+    for i in range(len(test)):
+        if i%2==0:
+            if test[i] =='4':
                 counter['4']+=1
-            if t =='8':
+            if test[i] =='8':
                 counter['8']+=1
     if (counter['4']==1) and (counter['8']==8):
 	print(
