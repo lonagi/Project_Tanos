@@ -20,7 +20,7 @@ print(
 "}"
 "p{"
 "color:white;"
-"background-color:grey;"
+"background-color:gray;"
 "padding:20px;"
 "display:table;"
 "}"
