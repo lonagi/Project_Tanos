@@ -23,6 +23,7 @@ print(
 "background-color:gray;"
 "padding:20px;"
 "display:table;"
+"margin: 0 auto;"
 "}"
 "</style>"
 )
@@ -87,17 +88,16 @@ print(
 
 
 for s in stringg:
-    counter = {}
-    if string.index(s)%2==0:
-        if s == '4':
-            counter['4']+=1
-        if s == '8':
-            counter['8']+=1
+	counter = {}
+	if string.index(s)%2==0:
+		if s == '4':
+			counter['4']+=1
+		if s == '8':
+			counter['8']+=1
 if (counter['4']==1) and (counter['8']==8):
-
-    print(
-    "<div style='color:red;'> YOU DID IT </div>"
-    )
+	print(
+	"<div style='color:red;'> YOU DID IT </div>"
+	)
 
 print (
   "</div>"
