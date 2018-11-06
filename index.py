@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#file version 6
+#file version 20
 import cgi
 form = cgi.FieldStorage()
 
@@ -43,6 +43,7 @@ print (
 p=form.getvalue("p")
 quest=form.getvalue("quest")
 stringg=form.getvalue("string")
+test=form.getvalue("test")
 
 #lol :)
 if p!=None: #suka!
@@ -87,12 +88,12 @@ print(
 )
 
 
-for s in stringg:
+for t in test:
 	counter = {}
-	if string.index(s)%2==0:
-		if s == '4':
+	if test.index(t)%2==0:
+		if t == '4':
 			counter['4']+=1
-		if s == '8':
+		if t == '8':
 			counter['8']+=1
 if (counter['4']==1) and (counter['8']==8):
 	print(
