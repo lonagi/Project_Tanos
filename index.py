@@ -85,8 +85,9 @@ print(
 "<p>ok so now you have to enter a string which contains 1 4 and 8 8 on chotnye places</p>"
 )
 
-counter = {}
+
 for s in stringg:
+    counter = {}
     if string.index(s)%2==0:
         if s == '4':
             counter['4']+=1
