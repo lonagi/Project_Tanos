@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#file version 20
+#file version 21
 import cgi
 form = cgi.FieldStorage()
 
@@ -43,7 +43,7 @@ print (
 p=form.getvalue("p")
 quest=form.getvalue("quest")
 stringg=form.getvalue("string")
-test=form.getvalue("test")
+fuc=form.getvalue("fuc")
 
 #lol :)
 if p!=None: #suka!
@@ -84,21 +84,26 @@ for i in stringg:
 		print ' lolka '
 
 print(
-"<p>ok so now you have to enter a string which contains 1 4 and 8 8 on chotnye places</p>"
+"<p>ok so now you have to enter a string which contains 1 4 and 8 8 on nechotnye places</p>"
 )
 
 
-for t in test:
-	counter = {}
-	if test.index(t)%2==0:
-		if t == '4':
-			counter['4']+=1
-		if t == '8':
-			counter['8']+=1
-if (counter['4']==1) and (counter['8']==8):
+def count(test):
+    counter={}
+    counter['4']=0
+    counter['8']=0
+    for t in test:
+        if test.index(t)%2==0:
+            if t =='4':
+                counter['4']+=1
+            if t =='8':
+                counter['8']+=1
+    if (counter['4']==1) and (counter['8']==8):
 	print(
 	"<div style='color:red;'> YOU DID IT </div>"
 	)
+	
+count(fuc)
 
 print (
   "</div>"
