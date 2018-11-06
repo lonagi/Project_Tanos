@@ -88,7 +88,7 @@ print(
 )
 
 
-def count(test):
+def countthis(test):
     counter={}
     counter['4']=0
     counter['8']=0
@@ -103,7 +103,7 @@ def count(test):
 	"<div style='color:red;'> YOU DID IT </div>"
 	)
 	
-count(fuc)
+countthis(fuc)
 
 print (
   "</div>"
