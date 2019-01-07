@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список покупок</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="block">
+		<h1 align="center">Список покупок</h1>
+		<div class="total">Расходы  - <span id="total">0</span> лей</div>
+		<div id="table"></div>
+		<div class="form_content">
+			<div class="input_form">
+				<form id="form">
+					<input type="text" id="product" class="input_list" placeholder="Название продукта" />
+					<input type="text" id="quantity" class="input_list" placeholder="Количество" />
+					<input type="text" id="price" class="input_list" placeholder="Розничная цена" />
+				</form>
+			</div>
+			<div class="button">
+				<button onclick="addItem()" class="button_form">Submit</button>
+			</div>
+		</div>
+
+		<p style="color:red; text-align:center; font: bold 2em;" id="err"></p>
+	</div>
+
+
+
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

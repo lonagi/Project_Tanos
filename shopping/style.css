@@ -1,0 +1,47 @@
+table {
+	background-color: lightblue;
+	box-sizing: border-box;
+	margin: 1em auto;
+}
+
+table, th, td {
+	border: 2px solid white;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.5em 1em;
+	text-align: center;
+	font: 2em "Times New Roman", serif;
+}
+
+th {
+	font: italic 2em "Times New Roman", serif;
+}
+
+.total {
+	text-align: center;
+	color: red;
+	font-size: 2em;
+}
+
+form {
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: lightblue;
+	padding: 2em 3em;
+	text-align: center;
+}
+
+.input_form {
+	margin: 2em 10em auto;
+}
+
+.input_list {
+	width: 32%;
+}
+
+.button {
+	text-align: center;
+	margin: 2em;
+}
