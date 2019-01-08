@@ -39,6 +39,21 @@ form {
 
 .input_list {
 	width: 32%;
+	font: 1.5em "Times New Roman", serif;
+}
+
+button {
+	background-color: #31c128;
+	width: 5.5em;
+	height: 3.5em;
+	color: white;
+	font: 1.5em "Tahoma", serif;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 10px;
+}
+
+button:hover {
+	border: 5px solid #a1ff9b;
 }
 
 .button {
