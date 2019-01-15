@@ -26,7 +26,7 @@ print(
 "display:table;"
 "margin: 0 auto;"
 "}"
-"<table>, <td>, <tr> {"
+"table, td, tr {"
 "border: 2px solid black;"
 "border-collapse: collapse;"
 "padding: 5px;"
