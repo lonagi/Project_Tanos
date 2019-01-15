@@ -64,7 +64,9 @@ print "<table>"
 for i in range(5):
 	print "<tr>"
 	for j in range(5):
-		print("<td>", round(random.random()*100), "</td>")
+		print "<td>"
+		print(round(random.random()*100))
+		print "</td>"
 	print "</tr>"
 print "</table>"
 
