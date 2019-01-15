@@ -29,25 +29,25 @@ function Operation() {
 
 	this.getSum = function() {
 		this.initVars();
-		this.rez = ((this.val1Hldr.value === undefined) || (this.val2Hldr.value === undefined)) ? "insert number" : this.value1 + this.value2;
+		this.rez = ((this.val1Hldr.value == "") || (this.val2Hldr.value == "")) ? "insert number" : this.value1 + this.value2;
 		this.displayRez();
 	};
 
 	this.getDiff = function() {
 		this.initVars();
-		this.rez = ((this.val1Hldr.value === undefined) || (this.val2Hldr.value === undefined)) ? "insert number" : this.value1 - this.value2;
+		this.rez = ((this.val1Hldr.value == "") || (this.val2Hldr.value == "")) ? "insert number" : this.value1 - this.value2;
 		this.displayRez();
 	};
 
 	this.getProd = function() {
 		this.initVars();
-		this.rez = ((this.val1Hldr.value === undefined) || (this.val2Hldr.value === undefined)) ? "insert number" : this.value1 * this.value2;
+		this.rez = ((this.val1Hldr.value == "") || (this.val2Hldr.value == "")) ? "insert number" : this.value1 * this.value2;
 		this.displayRez();
 	};
 
 	this.getDiv = function() {
 		this.initVars();
-		this.rez = ((this.val1Hldr.value === undefined) || (this.val2Hldr.value === undefined)) ? "insert number" : this.value1 / this.value2;
+		this.rez = ((this.val1Hldr.value == "") || (this.val2Hldr.value == "")) ? "insert number" : this.value1 / this.value2;
 		this.displayRez();
 	};
 
