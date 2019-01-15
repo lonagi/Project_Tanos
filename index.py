@@ -2,7 +2,7 @@
 #file version 21
 import cgi
 form = cgi.FieldStorage()
-import math
+import random
 
 print "Content-type: text/html; charset=utf-8\n"
 print "\n\n"
@@ -64,7 +64,7 @@ print "<table>"
 for i in range(5):
 	print "<tr>"
 	for j in range(5):
-		print("<td>", round(math.random(), 3), "</td>")
+		print("<td>", round(random.random()*100), "</td>")
 	print "</tr>"
 print "</table>"
 
