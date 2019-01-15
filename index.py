@@ -2,6 +2,7 @@
 #file version 21
 import cgi
 form = cgi.FieldStorage()
+import math
 
 print "Content-type: text/html; charset=utf-8\n"
 print "\n\n"
@@ -55,6 +56,17 @@ if p!=None: #suka!
 		print 'KREMLEBOT ALERT'
 	else:
 		print 'za toboi uzhe viehali'
+
+
+i = 0
+j = 0
+print "<table>"
+for i in range(5):
+	print "<tr>"
+	for j in range(5):
+		print("<td>", round(math.random(), 3), "</td>")
+	print "</tr>"
+print "</table>"
 
 
 print '<div><a class="btn btn-success" href="?quest=1">Click me :)</a></div><br/>'
