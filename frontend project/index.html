@@ -16,32 +16,33 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="icon" href="img/home-icon.png"/>
 </head>
-<body>
-	<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">Company</a>
-			</div>
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-nav-first">
-				<li><a href="#home" class="smoothScroll">Home</a></li>
-				<li><a href="#about" class="smoothScroll">About</a></li>
-				<li><a href="#team" class="smoothScroll">Team</a></li>
-				<li><a href="#courses" class="smoothScroll">Courses</a></li>
-				<li><a href="#contact" class="smoothScroll">Contact</a></li>
-				<li><a href="#map" class="smoothScroll">Map</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><i class="fa fa-phone"></i></a></li>
-			</ul>
-		</div>
-		</div>
-	</section>
+<body>  
+	<nav class="fixed-top custom-navbar navbar navbar-expand-lg navbar-light">
+	<div class="container">
+  
+  	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse2">
+    	<span class="navbar-toggler-icon"></span>
+ 	</button>
+
+
+<a class="navbar-brand" href="#">Company</a>
+  <div class="collapse navbar-collapse" id="navbar-collapse2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a href="#home" class="smoothScroll">Home</a></li>
+	  <li class="nav-item"><a href="#about" class="smoothScroll">About</a></li>
+	  <li class="nav-item"><a href="#team" class="smoothScroll">Team</a></li>
+	  <li class="nav-item"><a href="#courses" class="smoothScroll">Courses</a></li>
+	  <li class="nav-item"><a href="#contact" class="smoothScroll">Contact</a></li>
+	  <li class="nav-item"><a href="#map" class="smoothScroll">Map</a></li>
+    </ul>
+    <ul class="nav navbar-nav">
+		<li><a href="#"><i style="color: #009590;" class="fa fa-phone"></i></a></li>
+	</ul>
+  </div>
+
+</div>
+</nav>
+
 	<section id="home">
 		<div class="row">
 			<div class="owl-carousel owl-theme home-slider">
@@ -543,7 +544,7 @@
 		</div>
 	</section>
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ex.nvg-team.com/bootstrap3.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/custom.js"></script>

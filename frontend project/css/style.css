@@ -10,6 +10,27 @@ html {
 	padding: 12px 0;
 	margin-bottom: 0;
 	padding: 0;
+	min-height: 50px;
+
+}
+
+.smoothScroll
+{
+	display: block;
+    padding: 0.7rem 1rem;  
+}
+
+nav .smoothScroll
+{
+	color: #8A8B8B;
+}
+
+.smoothScroll:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #29ca8e;
+	padding: 0.7rem 1rem;
 }
 
 .custom-navbar .navbar-brand {
@@ -39,7 +60,6 @@ html {
 	margin-right: 5px;
 }
 
-.custom-navbar .navbar-nav > li > a:hover,
 .custom-navbar .navbar-nav > li > a:focus {
 	background-color: transparent;
 }
@@ -81,8 +101,10 @@ html {
 	background-size: cover;
 }
 
+
+
 .home-slider .item {
-	width: 100vw;
+	
 	height: 600px;
 	margin-bottom: 50px;
 }
