@@ -212,7 +212,7 @@ html {
 
 
 .section-title {
-	margin-top: 80px;
+	margin-top: 10px;
 	margin-bottom: 40px;
 	text-align: center;
 }
@@ -404,7 +404,11 @@ small{
 
 #contact .contact-image {
 	display: flex;
-	align-items: center; 
+	align-items: flex-start; 
+}
+
+#contact img {
+	margin-top: 10px;
 }
 
 #contact-form input[type="submit"] {
