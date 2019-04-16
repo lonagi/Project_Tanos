@@ -403,7 +403,8 @@ small{
 }
 
 #contact .contact-image {
-	display: inline-block;
+	display: flex;
+	align-items: center; 
 }
 
 #contact-form input[type="submit"] {
