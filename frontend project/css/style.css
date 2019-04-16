@@ -101,7 +101,16 @@ nav .smoothScroll
 	background-size: cover;
 }
 
+.nvg-a
+{
+	color: rgb(120,120,120);
+}
 
+.nvg-a:hover
+{
+	color: rgb(120,190,190);
+	text-decoration: none;
+}
 
 .home-slider .item {
 	
@@ -303,8 +312,8 @@ small{
 	border: 2px solid #f7f7f7;
 	background: #f7f7f7;
 	width: 350px;
-	height: 350px;
-	overflow: auto;
+	height: 400px;
+	
 }
 
 .courses-top {
