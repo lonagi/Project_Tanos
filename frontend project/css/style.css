@@ -2,6 +2,14 @@ html {
 	overflow-x: overlay;
 }
 
+.tanya-slider {
+	width: 100%;
+}
+
+.img-carousel {
+	height: 600px;
+}
+
 .custom-navbar {
 	background: #ffffff;
 	border-top: 5px solid #29ca8e;
