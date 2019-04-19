@@ -9,6 +9,7 @@ html {
 .img-carousel {
 	height: 1500px;
 	transform: translateY(-300px);
+
 }
 
 .nvg-car
@@ -204,8 +205,8 @@ nav .smoothScroll
 	border-radius: 100%;
 	text-align: center;
 	padding: 6em;
-	width: 450px;
-	height: 450px;
+	width: 375px;
+	height: 375px;
 } 
 
 .entry-form h2 {
