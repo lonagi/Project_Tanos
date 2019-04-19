@@ -7,6 +7,13 @@ html {
 }
 
 .img-carousel {
+	height: 1500px;
+	transform: translateY(-300px);
+}
+
+.nvg-car
+{
+	overflow: hidden;
 	height: 600px;
 }
 
