@@ -1,18 +1,8 @@
-$('.home-slider').owlCarousel({
-	animateOut: 'fadeOut',
-	items: 1,
-	loop: true,
-	dots: false,
-	autoplayHoverPause: false,
-	autoplay: true,
-	smartSpeed: 1000,
-});
-
 $('.owl-courses').owlCarousel({
 	animateOut: 'fadeOut',
 	autoWidth:true,
 	loop: true,
-	autoplayHoverPause: false,
+	autoplayHoverPause: true,
 	autoplay: true,
 	smartSpeed: 1000,
 	dots: false,
@@ -36,7 +26,7 @@ $('.owl-client').owlCarousel({
 	animateOut: 'fadeOut',
 	autoWidth:true,
 	loop: true,
-	autoplayHoverPause: false,
+	autoplayHoverPause: true,
 	autoplay: true,
 	smartSpeed: 1000,
 	responsiveClass: true,
