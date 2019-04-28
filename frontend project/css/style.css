@@ -10,6 +10,10 @@ nav > .container {
 	padding-top: 0;
 }
 
+footer > .container {
+	padding-top: 0;
+}
+
 .home-slider {
 	width: 100%;
 }
@@ -58,14 +62,14 @@ nav > .container {
 
 }
 
-nav .smoothScroll
+.navbar-nav .smoothScroll
 {
 	display: block;
     padding: 0.7rem 1rem;  
     color: #8A8B8B;
 }
 
- nav .smoothScroll:hover
+.navbar-nav .smoothScroll:hover
 {
 	text-decoration: none;
 	color: white;
@@ -455,4 +459,31 @@ small{
 #map {
 	max-width: 600px;
 	margin: 0 auto;
+}
+
+footer {
+	background: #474747;
+	color: #ffffff;
+}
+
+footer span {
+	display: inline-block;
+	margin: 3px;
+}
+
+.footer-icons, .footer-contact {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.footer-icons a {
+	color: #ffffff;
+	font-size: 35px; 
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.footer-icons a:hover {
+	text-decoration: none;
 }
