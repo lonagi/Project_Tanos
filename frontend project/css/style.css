@@ -72,15 +72,11 @@ nav .smoothScroll
 	line-height: 20px;
 }
 
-.custom-navbar .navbar-nav .navbar-nav-first {
-	margin-left: 8em;
+.custom-navbar .navbar-nav {
+	text-align: center;
 }
 
-.custom-navbar .navbar-nav .navbar-right li a {
-	padding: 0 12px;
-}
-
-.custom-navbar .navbar-nav .navbar-right li a .fa {
+.custom-navbar .navbar-nav li .fa {
 	background: #29ca8e;
 	border-radius: 100%;
 	color: #ffffff;
@@ -89,32 +85,28 @@ nav .smoothScroll
 	line-height: 30px;
 	text-align: center;
 	display: inline-block;
-	margin-right: 5px;
+	margin: 5px;
+	margin-left: 0;
 }
 
 .custom-navbar .navbar-nav > li > a:focus {
 	background-color: transparent;
 }
 
-.custom-navbar .nav li a:hover {
+.custom-navbar .navbar-nav li a:hover {
 	background-color: #29ca8e;
 	color: #ffffff;
 }
 
-.custom-navbar .nav li a:active > a {
+.custom-navbar .navbar-nav li a:active > a {
 	background-color: #29ca8e;
 	color: #ffffff;
 }
 
-.custom-navbar .navbar-toggle {
+.custom-navbar .navbar-toggler {
 	border: none;
 	padding-top: 10px;
 	background-color: transparent;
-}
-
-.custom-navbar .navbar-toggle .icon-bar {
-	background: #252525;
-	border-color: transparent;
 }
 
 .nvg-a
