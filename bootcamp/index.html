@@ -176,7 +176,7 @@ $(document).ready(function() {
 <!-- ========================= SECTION INTRO END// ========================= -->
 <div class="container">
 	<div class="row">
-		<div class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" data-nav="true">
+		<div class="owl-carousel owl-theme owl-init slide-items" data-items="5" data-margin="20">
 			<a href="#">
 			<div class="item-slide">
 				<figure class="card card-product">
@@ -248,7 +248,7 @@ $(document).ready(function() {
 
 <div class="container">
 	<div class="row">
-		<div class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" data-nav="true">
+		<div class="owl-carousel owl-theme owl-init slide-items" data-items="5" data-margin="20"	>
 			<a href="#">
 			<div class="item-slide">
 				<figure class="card card-product">
@@ -369,37 +369,39 @@ $(document).ready(function() {
 	</div><!-- //container -->
 
 	<script type="text/javascript">		
+
 $('.owl-carousel').owlCarousel({
-	dots:false,
-    loop:false,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
+	nav:false,
+	dotsEach: true,
+	loop: true,
+	responsiveClass: true,
+	responsive:{
         0:{
             items:1,
-            nav:false
+            dots:false
         },
 
         300:{
         	items:2,
-        	nav:false
+        	dots:false
         },
 
         600:{
             items:3,
-            nav:false
+            dots:false
         },
         800:{
         	items:4,
-        	nav:true
+        	dots:true
         },
         
         1000:{
             items:5,
-            nav:true
+            dots:true
         }
     }
-})
+	});
+
 	</script>
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
