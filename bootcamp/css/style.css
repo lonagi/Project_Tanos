@@ -7,6 +7,16 @@
 	background-size: cover;
 }
 
+.parallax {
+	background-attachment: fixed;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 .item-slide {
 	margin: 20px 5px;
 }
