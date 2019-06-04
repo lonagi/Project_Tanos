@@ -5,6 +5,32 @@
 .intro {
 	background-image: url("../images/main.jpeg");
 	background-size: cover;
+  	display: flex;
+  	flex: 1 0 auto;
+  	position: relative;
+  	z-index: -1;
+  	justify-content: center;
+  	align-items: center;
+  	transform: translateZ(-10px) scale(13);
+}
+
+.intro .row 
+{
+	transform: translateZ(0px) scale(0.85);
+}
+
+.section-intro 
+{
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.aparallax {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
 }
 
 .parallax {
