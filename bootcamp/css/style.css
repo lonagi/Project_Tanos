@@ -47,6 +47,10 @@
 	margin: 20px 10px;
 }
 
+.owl-dot {
+  background-color: #ffffff;
+}
+
 footer .btn-sm {
 	padding: 7.5px 10px;
 }
