@@ -1,5 +1,9 @@
 .header-main {
-	margin-top: 82px;
+  margin-top: 7.5rem !important;
+}
+
+.header-main[nvg="true"] {
+  margin-top: 5rem !important;
 }
 
 .intro {
