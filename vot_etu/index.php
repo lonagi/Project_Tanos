@@ -49,12 +49,20 @@
 echo '<div class="jumbotron container mt-3">
   <h1 class="display-4">Hello, world!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <hr class="my-4">';
+$astring = 'lol';
+$achar = 'c';
+$abool = true;
+$anint = 2000;
+var_dump($astring);
+var_dump($achar);
+var_dump($abool);
+var_dump($anint);
+echo '<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
-</div>'
+</div>';
 ?>
 </body>
 </html>
