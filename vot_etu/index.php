@@ -45,15 +45,9 @@
     </form>
   </div>
 </nav>
+<?php
 <div class="jumbotron container mt-3">
   <h1 class="display-4">Hello, world!</h1>
-  <?php
-  $readingParasha = true;
-  $listeningParasha = false;
-  $year = 2019;
-  $name = "Tanya";
-  echo $readingParasha." ".$listeningParasha." ".$year." ".$name;
-  ?>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -61,5 +55,6 @@
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>
+?>
 </body>
 </html>
