@@ -54,10 +54,12 @@ $astring = 'lol';
 $achar = 'c';
 $abool = true;
 $anint = 2000;
+$anarray = ['Tanya', '+', 'Sasha', true, 2018];
 var_dump($astring);
 var_dump($achar);
 var_dump($abool);
 var_dump($anint);
+var_dump($anarray);
 echo '<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
