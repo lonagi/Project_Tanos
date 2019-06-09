@@ -55,6 +55,10 @@
   background-color: #ffffff;
 }
 
+.badge-offer {
+  font-family: "Nunito Sans";
+}
+
 footer .btn-sm {
 	padding: 7.5px 10px;
 }

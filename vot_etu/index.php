@@ -60,6 +60,7 @@ var_dump($achar);
 var_dump($abool);
 var_dump($anint);
 var_dump($anarray);
+var_dump($_SERVER);
 echo '<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
