@@ -1,3 +1,13 @@
+<?php
+//ЫЫЫ ЗДАРОВАААА. Я ПХП ТУТ ПОСПЛЮ ХОРОШО?
+/*
+СПС
+*/
+
+$page = $_GET['variable'];
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,13 +70,14 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
   This is a success alert—check it out!
   </div>';
 };
+
 echo '<footer class="bg-dark">
   <div class="container d-flex justify-content-center align-items-center">';
 
-if($_GET["variable"] == "reg"){
+if($page == "reg"){
   echo'<h1 class="text-light">Just me</h1>';
 }
-elseif($_GET["variable"] == "main"){
+elseif($page == "main"){
   echo'<h1 class="text-light">'.date("d (l), m (F), Y").'</h1>';
 };
 echo '</div></footer>';
