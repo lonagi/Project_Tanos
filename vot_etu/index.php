@@ -63,7 +63,7 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
 echo '<footer class="bg-dark">
   <div class="container d-flex justify-content-center align-items-center">';
 if(sizeof($_GET) == 0){
-  echo'<footer class="bg-dark"></footer>';
+  echo'';
 }
 elseif($_GET["variable"] == "reg"){
   echo'<h1 class="text-light">Just me</h1>';
