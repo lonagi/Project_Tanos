@@ -67,6 +67,8 @@ if(isset($_GET['variable'])){
 //1 
 $page = $_GET['variable']; 
 //2
+
+//кое-где в файле есть ошибка на уровне html. ну, раз хотел, ищи сама
 if($page == "reg"){
   echo'<h1 class="text-light">Just me</h1>';
 }
