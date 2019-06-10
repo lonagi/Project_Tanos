@@ -1,15 +1,3 @@
-<?php
-//ЫЫЫ ЗДАРОВАААА. Я ПХП ТУТ ПОСПЛЮ ХОРОШО?
-/*
-СПС
-*/
-
-if(isset($_GET['variable']))
-  $page = $_GET['variable'];
-//опа, а тут может быть и ошибка О_о
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,14 +63,21 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
 
 echo '<footer class="bg-dark">
   <div class="container d-flex justify-content-center align-items-center">';
-
+if(isset($_GET['variable'])){
+//1 
+$page = $_GET['variable']; 
+//2
 if($page == "reg"){
   echo'<h1 class="text-light">Just me</h1>';
 }
 elseif($page == "main"){
   echo'<h1 class="text-light">'.date("d (l), m (F), Y").'</h1>';
 };
+}
+
+else{
 echo '</div></footer>';
+}
 ?>
 </body>
 </html>
