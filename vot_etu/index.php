@@ -61,5 +61,12 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
   </div>';
 };
 ?>
+<footer class="bg-dark d-flex justify-content-center align-items-center">
+  <h1 class="text-light">
+  <?php
+  echo date("It is d (l), m (F), Y");
+  ?>
+  </h1>
+</footer>
 </body>
 </html>
