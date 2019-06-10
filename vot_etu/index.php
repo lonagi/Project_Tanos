@@ -50,22 +50,16 @@ echo '<div class="jumbotron container mt-3">
   <h1 class="display-4">Hello, world!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">';
-$astring = 'lol';
-$achar = 'c';
-$abool = true;
-$anint = 2000;
-$anarray = ['Tanya', '+', 'Sasha', true, 2018];
-var_dump($astring);
-var_dump($achar);
-var_dump($abool);
-var_dump($anint);
-var_dump($anarray);
-var_dump($_SERVER);
 echo '<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>';
+if($_SERVER["REMOTE_ADDR"] == $_SERVER["HTTP_X_REAL_IP"]){
+  echo '<div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+  </div>';
+};
 ?>
 </body>
 </html>
