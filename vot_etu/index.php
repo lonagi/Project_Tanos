@@ -1,12 +1,5 @@
 <?php
-//ЫЫЫ ЗДАРОВАААА. Я ПХП ТУТ ПОСПЛЮ ХОРОШО?
-/*
-СПС
-*/
-
-if(isset($_GET['variable']))
-  $page = $_GET['variable'];
-//опа, а тут может быть и ошибка О_о
+//пока(
 
 ?>
 
@@ -72,6 +65,9 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
   This is a success alert—check it out!
   </div>';
 };
+
+if(isset($_GET['variable']))
+  $page = $_GET['variable'];
 
 echo '<footer class="bg-dark">
   <div class="container d-flex justify-content-center align-items-center">';
