@@ -55,7 +55,7 @@ echo '<p>It uses utility classes for typography and spacing to space content out
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>';
-if($_SERVER["REMOTE_ADDR"] == $_SERVER["HTTP_X_REAL_IP"]){
+if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
   echo '<div class="alert alert-success" role="alert">
   This is a success alert—check it out!
   </div>';
