@@ -60,13 +60,19 @@ if($_SERVER["REMOTE_ADDR"] == "188.0.227.214"){
   This is a success alert—check it out!
   </div>';
 };
+if(sizeof($_GET) == 0){
+  echo'<footer class="bg-dark"></footer>';
+}
+elseif($_GET["variable"] == "reg"){
+  echo'<footer class="bg-dark">
+  <div class="container d-flex justify-content-center align-items-center"">
+  <h1 class="text-light">Just me</h1></div></footer>';
+}
+elseif($_GET["variable"] == "main"){
+  echo'<footer class="bg-dark">
+  <div class="container d-flex justify-content-center align-items-center"">
+  <h1 class="text-light">'.date("d (l), m (F), Y").'</h1></div></footer>';
+};
 ?>
-<footer class="bg-dark d-flex justify-content-center align-items-center">
-  <h1 class="text-light">
-  <?php
-  echo date("It is d (l), m (F), Y");
-  ?>
-  </h1>
-</footer>
 </body>
 </html>
