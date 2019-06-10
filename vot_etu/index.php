@@ -4,7 +4,8 @@
 СПС
 */
 
-$page = $_GET['variable'];
+if(isset($_GET['variable']))
+  $page = $_GET['variable'];
 //опа, а тут может быть и ошибка О_о
 
 ?>
