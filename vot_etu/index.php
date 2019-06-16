@@ -73,10 +73,6 @@ if($page == "reg"){
 elseif($page == "main"){
   echo'<h1 class="text-light">'.date("d (l), m (F), Y").'</h1>';
 };
-}
-
-else{
-echo '';
 };
 echo '</div></footer>';
 ?>
