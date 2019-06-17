@@ -4,7 +4,7 @@
 $(document).ready(function() {
 	// jQuery code
 
-    if(window.innerWidth > 1004 || window.innerWidth < 570)
+    if(window.innerWidth > 1200 || window.innerWidth < 570)
         $(".header-main").attr("nvg","true");
     else
         $(".header-main").attr("nvg","false");
