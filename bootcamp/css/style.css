@@ -55,10 +55,6 @@
   background-color: #ffffff;
 }
 
-.badge-offer {
-  font-family: "Nunito Sans";
-}
-
 footer .btn-sm {
 	padding: 7.5px 10px;
 }
@@ -91,4 +87,19 @@ footer .btn-sm {
 .ic i {
   border-radius: 100%;
   box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+}
+
+.img-like {
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 576px) {
+  .img-like {
+    height: 300px;
+    width: auto;
+  }
+}
+
+.img-cart {
+  object-fit: contain;
 }

@@ -166,8 +166,8 @@ $(document).ready(function() {
 		<header class="intro-wrap text-white">
 			<h2 class="display-3"> All in </h2>
 			<p class="text-dark">The best stock of cosmetics in Moldova</p>
-			<a href="#" class="btn btn-warning">Log in</a>
-			<a href="#" class="btn btn-light">View products</a>
+			<a href="pages/registration.html" class="btn btn-warning">Log in</a>
+			<a href="categories/face.html" class="btn btn-light">View products</a>
 		</header>  <!-- intro-wrap .// -->
 	</div> <!-- col.// -->
 	</div> <!-- row.// -->
@@ -372,31 +372,29 @@ $(document).ready(function() {
 	<script type="text/javascript">		
 
 $('.owl-carousel').owlCarousel({
-	nav:false,
+	nav: false,
+	dots: true,
+	autoplay:true,
+	autoplayHoverPause: true,
 	responsiveClass: true,
 	responsive:{
         0:{
             items:1,
-            dots:false
         },
 
         450:{
         	items:2,
-        	dots:false
         },
 
         700:{
             items:3,
-            dots:false
         },
-        800:{
+        950:{
         	items:4,
-        	dots:true
         },
         
-        1000:{
+        1200:{
             items:5,
-            dots:true
         }
     }
 	});
