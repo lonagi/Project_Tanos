@@ -1,3 +1,6 @@
+<?php
+require "db.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,5 +79,14 @@ elseif($page == "main"){
 };
 echo '</div></footer>';
 ?>
+<div class="container d-flex justify-content-center">
+  <?php if(isset($_SESSION['logged_user'])) :?>
+  <h3 class="text-center text-light">Hello, <?php echo $_SESSION['logged_user']->login; ?> </h3> <br/>
+  <a class="btn btn-danger" href="/logout.php">Log out</a>
+<?php else : ?>
+<a class="btn btn-success mr-2" href="/login.php">Log in</a>
+<a class="btn btn-info ml-2" href="/signup.php">Sign up</a>
+<?php endif; ?>
+</div>
 </body>
 </html>
