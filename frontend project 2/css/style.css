@@ -10,18 +10,14 @@
 	color: #fff;
 }
 
-.lang-item {
+.lang-item, .overlay-content li a{
+	text-decoration: none;
 	margin: 0 0.5rem;
 	color: #fff;
 }
 
 .lang-item:hover {
-	text-decoration: none;
 	color: #fff;
-}
-
-.lang-item:focus {
-	text-decoration: none;
 }
 
 .info-navbar .active {
@@ -48,17 +44,55 @@
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 1076px) {
-	.custom-navbar li{
-    padding: 0.7rem 1rem;  
-}
-}
 
 .custom-navbar li a:hover{
 	background-color: #FFB74D;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.5s ease;
+}
+
+.menu-navbar{
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    background-color: #FFB74D; 
+    overflow-x: hidden;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%; 
+    text-align: center; 
+}
+
+.overlay-content li{
+	list-style-type: none;
+}
+
+
+#close-menu {
+	display: inline-block;
+	font-size: 0.8rem;
+	color: #000;
+	text-transform: uppercase;
+	padding: 2.5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+	.custom-navbar li a{
+    padding: 0.7rem 1rem;  
+	}
+	#close-menu {
+		padding-top: 3.5rem;
+		padding-bottom: 1.5rem;
+	}
+	.info-navbar {
+		border-bottom: solid #fff 3px;
+	}
 }
 
 .home-slider {
