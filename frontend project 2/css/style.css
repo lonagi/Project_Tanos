@@ -40,7 +40,7 @@
 }
 }
 
-.custom-navbar li{
+.custom-navbar li a{
 	display: block;
 	text-align: center;
     padding: 2.8rem 1rem;  
@@ -54,9 +54,10 @@
 }
 }
 
-.custom-navbar li:hover{
+.custom-navbar li a:hover{
 	background-color: #FFB74D;
 	color: #fff;
+	text-decoration: none;
 	transition: 0.5s ease;
 }
 
