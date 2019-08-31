@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans&display=swap);
+
+* {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.info-navbar{
+	background-color: #FFB74D;
+	color: #fff;
+}
+
+.lang-item {
+	margin: 0 0.5rem;
+	color: #fff;
+}
+
+.lang-item:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.lang-item:focus {
+	text-decoration: none;
+}
+
+.info-navbar .active {
+	color:#EF6C00;
+}
+
+.custom-brand img{
+	max-width: 270px;
+	height: auto;
+}
+
+@media screen and (max-width: 576px) {
+.custom-brand img  {
+	max-width: 150px;
+	height: auto;
+}
+}
+
+.custom-navbar li{
+	display: block;
+	text-align: center;
+    padding: 2.8rem 1rem;  
+	color: #EF6C00;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1076px) {
+	.custom-navbar li{
+    padding: 0.7rem 1rem;  
+}
+}
+
+.custom-navbar li:hover{
+	background-color: #FFB74D;
+	color: #fff;
+	transition: 0.5s ease;
+}
+
+.home-slider {
+	width: 100%;
+}
+
+.home-slider .img-carousel {
+	height: 1000px;
+	transform: translateY(-400px);
+}
+
+.nvg-car
+{
+	overflow: hidden;
+	height: 500px;
+}
+
+@media only screen and (max-width: 780px) {
+	.home-slider .img-carousel{
+		width: 100%;
+		height: inherit;
+		transform: translateY(0);
+		object-fit: cover;
+	}
+}
