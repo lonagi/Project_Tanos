@@ -54,13 +54,13 @@
 			<div id="home-carousel" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="nvg-car carousel-item active">
-						<img class="img-carousel" src="img/slide-1.jpeg" alt="First slide"/>
+						<img class="img-carousel" src="img/pre-slide-1.jpg" data-src="img/slide-1.jpeg" alt="First slide"/>
 					</div>
 					<div class="nvg-car carousel-item">
-						<img class="img-carousel" src="img/slide-2.jpeg" alt="Second slide"/>
+						<img class="img-carousel" src="img/pre-slide-2.jpg" data-src="img/slide-2.jpeg" alt="Second slide"/>
 					</div>
 					<div class="nvg-car carousel-item">
-						<img class="img-carousel" src="img/slide-3.jpeg" alt="Third slide"/>
+						<img class="img-carousel" src="img/pre-slide-3.jpg" data-src="img/slide-3.jpeg" alt="Third slide"/>
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
@@ -74,8 +74,18 @@
 			</div>
 		</div>
 </section>
+<footer>
+<button onclick="nvgjs.ScrollTopSoft();" class="btn btn-dark btn-lg show fade" id="btn-up"> Наверх </button>
 <script src="js/jquery.js"></script>
 <script src="https://ex.nvg-team.com/bootstrap3.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/nvg.js"></script>
+<script type="text/javascript">
+var element_soft = new nvgs("#btn-up", 90, 1); 
+nvgs.setFix("#btn-up", "br", 50, 50);
+
+nvgi.preLoad("img-carousel", "data-src");
+</script>
+</footer>
 </body>
 </html>

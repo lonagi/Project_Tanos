@@ -7,7 +7,6 @@ $(document).ready(function(){
     	$(".menu-navbar").animate({width: '20%'}, 500);
     }
 	});
-
 	$("#close-menu").click(function(){
 		if (window.matchMedia('(max-width: 992px)').matches) {
 		$(".menu-navbar").animate({height: '0%'}, 500);

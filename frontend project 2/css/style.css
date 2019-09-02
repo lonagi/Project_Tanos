@@ -30,7 +30,7 @@
 	height: auto;
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 .custom-brand img  {
 	max-width: 150px;
 	height: auto;
@@ -50,7 +50,7 @@
 	background-color: #FFB74D;
 	color: #fff;
 	text-decoration: none;
-	transition: 0.5s ease;
+	transition: 0.2s ease;
 }
 
 .menu-navbar{
@@ -83,7 +83,7 @@
 	padding: 2.5rem 0;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
 	.custom-navbar li a{
     padding: 0.7rem 1rem;  
 	}
@@ -108,7 +108,21 @@
 .nvg-car
 {
 	overflow: hidden;
-	height: 500px;
+	height: 1000px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+.home-slider .img-carousel {
+	height: 1800px;
+	transform: translateY(-900px);
+}
+
+.nvg-car
+{
+	overflow: hidden;
+	height: 800px;
+}
 }
 
 @media only screen and (max-width: 780px) {
