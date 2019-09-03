@@ -5,6 +5,7 @@ $(document).ready(function(){
         $(".menu-navbar").animate({height: '100%'}, 500);
     } else {
     	$(".menu-navbar").animate({width: '20%'}, 500);
+    	$(".space").fadeIn(500);
     }
 	});
 	$("#close-menu").click(function(){
@@ -12,6 +13,7 @@ $(document).ready(function(){
 		$(".menu-navbar").animate({height: '0%'}, 500);
     } else {
         $(".menu-navbar").animate({width: '0'}, 500);
+        $(".space").fadeOut(500);
     }
 	});
 });
