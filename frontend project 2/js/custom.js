@@ -16,4 +16,8 @@ $(document).ready(function(){
         $(".space").fadeOut(500);
     }
 	});
+	$(".space").click(function(){
+		$(".menu-navbar").animate({width: '0%'}, 500);
+		$(".space").fadeOut(500);
+	})
 });
