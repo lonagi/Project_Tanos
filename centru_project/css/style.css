@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+section{
+	padding-top: 180px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
+}
+
+
+.custom-navbar {
+	border-bottom: 8px solid #00699B;
+	background-color: #FFFFFF;
+}
+
+.custom-navbar .icon {
+	display: inline-block;
+}
+
+.custom-navbar li a {
+	color: #00699B;
+	display: block;
+	padding: 0.9em 0.6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-align: center;
+
+}
+
+.custom-navbar .active a {
+	background-color: #00699B;
+	color: white;
+}
+
+.home{
+	height: 800px;
+	background: url("../img/macheta-final.png") no-repeat;
+	background-size: cover;
+	transform: translateY(-150px);
+}
+
+.home .home-logo img {
+	width: 350px;
+	z-index: 2;
+	border: 12px solid #00699B;
+	border-radius: 100%;
+}
