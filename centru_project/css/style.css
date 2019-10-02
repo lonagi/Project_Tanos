@@ -7,6 +7,13 @@
 
 section{
 	padding-top: 180px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
+	/*АДАПТАЦИЯ ЗАГЛАВНОГО ЭКРАНА ПОД ТЕЛЕФОН*/
+}
+
+@media only screen and (max-width: 992px) {
+	section {
+		padding-top: 50px;
+	}
 }
 
 
@@ -37,15 +44,78 @@ section{
 }
 
 .home{
-	height: 800px;
-	background: url("../img/macheta-final.png") no-repeat;
+	height: 780px;
+	background: url("../img/macheta-final.png") center no-repeat;
 	background-size: cover;
-	transform: translateY(-150px);
+	transform: translateY(-130px); /*????*/
 }
 
 .home .home-logo img {
 	width: 350px;
-	z-index: 2;
+	z-index: 3;
 	border: 12px solid #00699B;
+	border-radius: 100%;
+}
+
+.home .blank {
+	width: 0px;
+	height: 200px;
+	position: absolute;
+	z-index: -2;
+	background-color: #fff;
+	transform: skewX(-20deg);
+	border-right: 12px solid #00699B;
+	border-left: 12px solid #00699B;
+}
+
+@media only screen and (max-width: 992px) {
+	.home {
+		transform: translateY(0);
+	}
+
+	.home .home-logo img {
+		width: 250px;
+	}
+}
+ 
+/* попытка адаптировать анимацию под телефон **/
+
+/*@media only screen and (max-width: 992px) {
+
+	.home {
+		overflow: hidden;
+	}
+	.home .home-logo img {
+	width: 250px;
+	z-index: 3;
+	border: 12px solid #00699B;
+	border-radius: 100%;
+	}	
+
+	.home .blank {
+	width: 650px;
+	height: 130px;
+	z-index: 1;
+	
+	}	
+	.blank-right {
+		right: -40px;
+		top: 210px;
+
+	}
+
+	.blank-left {
+		left: -40px;
+		bottom: 25px;
+	}
+
+}*/
+
+.home .logo {
+	display: none;
+}
+
+.home .logo img{
+	width: 200px;
 	border-radius: 100%;
 }
