@@ -6,7 +6,7 @@
 }
 
 section{
-	padding-top: 180px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
+	padding-top: 90px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
 	/*АДАПТАЦИЯ ЗАГЛАВНОГО ЭКРАНА ПОД ТЕЛЕФОН*/
 }
 
@@ -40,14 +40,14 @@ section{
 
 .custom-navbar .active a {
 	background-color: #00699B;
-	color: white;
+	color: #fff;
 }
 
 .home{
-	height: 780px;
+	height: 650px;
 	background: url("../img/macheta-final.png") center no-repeat;
 	background-size: cover;
-	transform: translateY(-130px); /*????*/
+	transform: translateY(0px); /*????*/
 }
 
 .home .home-logo img {
