@@ -77,39 +77,6 @@ section{
 		width: 250px;
 	}
 }
- 
-/* попытка адаптировать анимацию под телефон **/
-
-/*@media only screen and (max-width: 992px) {
-
-	.home {
-		overflow: hidden;
-	}
-	.home .home-logo img {
-	width: 250px;
-	z-index: 3;
-	border: 12px solid #00699B;
-	border-radius: 100%;
-	}	
-
-	.home .blank {
-	width: 650px;
-	height: 130px;
-	z-index: 1;
-	
-	}	
-	.blank-right {
-		right: -40px;
-		top: 210px;
-
-	}
-
-	.blank-left {
-		left: -40px;
-		bottom: 25px;
-	}
-
-}*/
 
 .home .logo {
 	display: none;
@@ -118,4 +85,58 @@ section{
 .home .logo img{
 	width: 200px;
 	border-radius: 100%;
+}
+
+#team .card {
+	width: 350px;
+	border: 8px solid #f0f0f0;
+	background-color: #f0f0f0;
+}
+
+#team .card img {
+	height: 400px;
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 992px) {
+	#team .card img {
+	height: 600px;
+	object-fit: cover;
+}
+}
+
+#team .card .card-title {
+	font-weight: bolder;
+}
+
+#team .card .card-text {
+	font-size: 1.1rem;
+	color: #575757;
+}
+
+#team .section-title {
+	color: #00699B;
+	font-weight: bolder;
+}
+
+#contacts {
+	background-image: linear-gradient(to bottom left, #833AB4, #C13584, #E1306C, #F56040, #F77737, #FCAF45);
+}
+
+#contacts a {
+	text-decoration: none;
+	font-size: 6rem;
+	margin: 0 0.1em;
+}
+
+#contacts i, p{
+	display: inline-block;
+	font-size: 2rem;
+}
+
+.left-contacts {
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 420px;
+	border: 10px solid #fff;
+
 }
