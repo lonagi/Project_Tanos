@@ -34,13 +34,13 @@
 		<a href="#" class="icon d-none d-lg-block px-3"><span class="navbar-toggler-icon"></span></a>
 		<div class="collapse navbar-collapse" id="myNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active" id="about-nav"><a href="#about">Despre noi</a></li>
-				<li class="nav-item" id="team-nav"><a href="#team">Echipă</a></li>
-				<li class="nav-item" id="services-nav"><a href="#services">Servicii</a></li>
-				<li class="nav-item" id="news-nav"><a href="#">Noutăți</a></li>
-				<li class="nav-item" id="programes-nav"><a href="#">Programe</a></li>
-				<li class="nav-item" id="write-nav"><a href="#">Scrieți-ne</a></li>
-				<li class="nav-item" id="contacts-nav"><a href="#contacts">Contacte</a></li>
+				<li class="nav-item active" id="about-nav"><a onclick="nvgjs.ScrollTopSoft();" href="#">Despre noi</a></li>
+				<li class="nav-item" id="team-nav"><a onclick="nvgjs.ScrollTo('team', 800)" href="#team">Echipă</a></li>
+				<li class="nav-item" id="services-nav"><a onclick="nvgjs.ScrollTo('services', 800)" href="#services">Servicii</a></li>
+				<li class="nav-item" id="news-nav"><a onclick="nvgjs.ScrollTo('news', 800)" href="#news">Noutăți</a></li>
+				<li class="nav-item" id="programes-nav"><a onclick="nvgjs.ScrollTo('programes', 800)" href="#programes">Programe</a></li>
+				<li class="nav-item" id="write-nav"><a onclick="nvgjs.ScrollTo('write', 800)" href="#write">Scrieți-ne</a></li>
+				<li class="nav-item" id="contacts-nav"><a onclick="nvgjs.ScrollTo('contacts', 800)" href="#contacts">Contacte</a></li>
 			</ul>
 		</div>
 	</div>
@@ -108,6 +108,10 @@
 		</div>
 </div>
 </section>
+<section id="services" style="height: 700px"></section>
+<section id="news" style="height: 700px"></section>
+<section id="programes" style="height: 700px"></section>
+<section id="write" style="height: 700px"></section>
 <section id="contacts" class="pb-5">
 	<div class="container">
 		<h1 class="section-title text-center text-white mb-5">Contacte</h1>
