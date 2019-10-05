@@ -31,10 +31,10 @@
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a onclick="nvgjs.ScrollTopSoft();" href="#" class="icon d-none d-lg-block px-3"><span class="navbar-toggler-icon"></span></a>
+		<a onclick="nvgjs.ScrollTopSoft();" href="#" class="active icon d-none d-lg-block px-3"><span class="navbar-toggler-icon"></span></a>
 		<div class="collapse navbar-collapse" id="myNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active" id="about-nav"><a onclick="nvgjs.ScrollTo('about', 800)" href="#about">Despre noi</a></li>
+				<li class="nav-item" id="about-nav"><a onclick="nvgjs.ScrollTo('about', 800)" href="#about">Despre noi</a></li>
 				<li class="nav-item" id="team-nav"><a onclick="nvgjs.ScrollTo('team', 800)" href="#team">Echipă</a></li>
 				<li class="nav-item" id="services-nav"><a onclick="nvgjs.ScrollTo('services', 800)" href="#services">Servicii</a></li>
 				<li class="nav-item" id="news-nav"><a onclick="nvgjs.ScrollTo('news', 800)" href="#news">Noutăți</a></li>
@@ -137,6 +137,7 @@
 	</div>
 </section>
 <footer>
+<button class="btn" style="visibility: hidden;" id="btn-none"> la </button>
 <button onclick="nvgjs.ScrollTopSoft();" class="btn btn-dark btn-lg show fade" id="btn-up"> Înainte </button>
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/bootstrap.bundle.js" type="text/javascript"></script>
@@ -146,7 +147,53 @@
 var element_soft = new nvgs("#btn-up", 90, 1); 
 nvgs.setFix("#btn-up", "br", 50, 50);
 
-alert(nvgjs.Collision('#write', '#contacts', pos1=0,pos2=0, offsety=10000000000000000000) && nvgjs.isVisible('#contacts'));
+nvgs.setFix("#btn-none", "tr", 50, 50);
+
+window.onscroll = function() {whatCol()};
+
+function whatCol()
+{
+	if(nvgjs.Collision('#btn-none', '#contacts'))
+	{
+		$('.active').removeClass('active');
+		$('#contacts-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#about'))
+	{
+		$('.active').removeClass('active');
+		$('#about-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#team'))
+	{
+		$('.active').removeClass('active');
+		$('#team-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#services'))
+	{
+		$('.active').removeClass('active');
+		$('#services-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#news'))
+	{
+		$('.active').removeClass('active');
+		$('#news-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#programes'))
+	{
+		$('.active').removeClass('active');
+		$('#programes-nav').addClass('active');
+	}
+	else if(nvgjs.Collision('#btn-none', '#write'))
+	{
+		$('.active').removeClass('active');
+		$('#write-nav').addClass('active');
+	}
+
+	else {
+		$('.active').removeClass('active');
+	}
+}
+
 </script>
 </footer>
 </body>
