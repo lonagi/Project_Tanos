@@ -111,7 +111,35 @@
 <section id="services" style="height: 700px"></section>
 <section id="news" style="height: 700px"></section>
 <section id="programes" style="height: 700px"></section>
-<section id="write" style="height: 700px"></section>
+<section id="write">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-12 col-lg-8 write-block">
+				<h1 class="section-title text-center text-white">Scrieți-ne!</h1>
+				<form id="contact-form" role="form" action="" method="post">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-lg-6">
+								<input class="form-control" type="text" name="name" placeholder="Numele, Prenumele" required />
+							</div>
+							<div class="col-lg-6">
+								<input class="form-control" type="email" name="email" placeholder="Email-ul" required />
+							</div>
+						</div>
+						<textarea rows="8" class="form-control" placeholder="Mesajul Dvs" required></textarea>
+						
+					</div>
+					<div class="form-group text-center">
+						<input type="submit" class="btn btn-success btn-form" name="send_message" value="Trimite"/>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+	</div>
+</section>
 <section id="contacts" class="pb-5">
 	<div class="container">
 		<h1 class="section-title text-center text-white mb-5">Contacte</h1>
@@ -123,11 +151,9 @@
 						<a class="mx-2" href="https://www.facebook.com/CentrulMunicipalTineretChisinau" target="_blank"> <img class="contacts-logo" src="img/fb-logo.svg" alt="facebook"/></a>
 						<a class="mx-2" href="https://www.instagram.com/centrul_de_tineret_chisinau/" target="_blank"> <img class="contacts-logo" src="img/inst-logo.svg" alt="instagram"/></a>
 					</div>
-					<i class="fas fa-envelope-open"></i>
-					<p>centru.chisinau@gmail.com</p>
+					<p><i class="fas fa-envelope-open"></i> centru.chisinau<br class="d-block d-sm-none" />@gmail.com</p>
 						<br/>
-					<i class="fa fa-phone"></i>
-					<p>022 482 420</p>
+					<p><i class="fa fa-phone"></i> 022 482 420</p>
 				</div>
 			</div>
 			<div class="col-12 col-lg-6 my-3 px-0">
@@ -147,7 +173,7 @@
 var element_soft = new nvgs("#btn-up", 90, 1); 
 nvgs.setFix("#btn-up", "br", 50, 50);
 
-nvgs.setFix("#btn-none", "tr", 50, 50);
+nvgs.setFix("#btn-none", "tr", 50, 200);
 
 window.onscroll = function() {whatCol()};
 

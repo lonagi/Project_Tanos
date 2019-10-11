@@ -7,13 +7,13 @@
 }
 
 section{
-	padding-top: 90px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
+	padding: 90px; /* ПРИДУМАТЬ КАК СДЕЛАТЬ ОТСТУПЫ ТАК ЧТОБЫ ВЕРТИКАЛ ЭЛАЙН БЫЛ ВСЕ ЕЩЕ КРАСИВЫЙ*/
 	/*АДАПТАЦИЯ ЗАГЛАВНОГО ЭКРАНА ПОД ТЕЛЕФОН*/
 }
 
 @media only screen and (max-width: 992px) {
 	section {
-		padding-top: 50px;
+		padding: 50px;
 	}
 }
 
@@ -120,15 +120,40 @@ section{
 	font-weight: bolder;
 }
 
+#write {
+	background: url("../img/write-bg-3.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#write .section-title {
+	background-color: #28a745;
+	padding: 0.3em;
+	border-radius: 50px;
+}
+
+#write .write-block {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 10px solid #fff;
+	border-radius: 50px;
+	padding: 1em 2em;
+	margin: 40px 0; 
+}
+
+.form-control {
+	margin: 0.8em 0;
+	border-radius: 15px
+}
+
+.btn-form {
+	width: 10em;
+	padding: 0.7em;
+	margin-top: 1em;
+	border-radius: 50px;
+}
+
 #contacts {
 	background-image: linear-gradient(to bottom left, #833AB4, #C13584, #E1306C, #F56040, #F77737, #FCAF45);
 }
-
-/*#contacts a {
-	text-decoration: none;
-	font-size: 6rem;
-	margin: 0 0.1em;
-}*/
 
 .left-contacts {
 	background-color: rgba(255, 255, 255, 0.2);
