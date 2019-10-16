@@ -112,18 +112,13 @@ section{
 	color: #575757;
 }
 
-#team .section-title {
+.section-title {
 	color: #00699B;
 	font-weight: bolder;
 }
 
 #services {
 	background-color: #fafafa;
-}
-
-#services .section-title {
-	color: #00699B;
-	font-weight: bolder;
 }
 
 #services .card {
@@ -136,10 +131,22 @@ section{
 	object-fit: cover;
 }
 
+#news {
+	background: url("../img/news-bg.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#news .section-title {
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px 30px;
+	border: 5px solid #d6d6d6;
+	border-radius: 50px;
+}
+
 #write {
 	background-image: linear-gradient(to top right,#3760ab, #7fa8eb);
 }
-
 
 #write .write-block {
 	background-color: rgba(255, 255, 255, 1);
