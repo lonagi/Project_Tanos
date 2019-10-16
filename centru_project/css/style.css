@@ -89,9 +89,8 @@ section{
 }
 
 #team .card {
+	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.25);
 	width: 350px;
-	border: 8px solid #f0f0f0;
-	background-color: #f0f0f0;
 }
 
 #team .card img {
@@ -121,27 +120,25 @@ section{
 }
 
 #write {
-	background: url("../img/write-bg-3.jpg") center no-repeat;
-	background-size: cover;
+	background-image: linear-gradient(to top right,#3760ab, #7fa8eb);
 }
 
-#write .section-title {
-	background-color: #28a745;
-	padding: 0.3em;
-	border-radius: 50px;
-}
 
 #write .write-block {
-	background-color: rgba(255, 255, 255, 0.5);
-	border: 10px solid #fff;
-	border-radius: 50px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 5px solid #f2f2f2;
+	border-radius: 15px;
 	padding: 1em 2em;
 	margin: 40px 0; 
 }
 
+#write .section-title {
+	font-weight: bolder;
+}
+
 .form-control {
 	margin: 0.8em 0;
-	border-radius: 15px
+	border-radius: 8px
 }
 
 .btn-form {
