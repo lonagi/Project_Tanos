@@ -89,13 +89,20 @@ section{
 	border-radius: 100%;
 }
 
-#team .card {
+.card img {
+	object-fit: cover;
+}
+
+.card {
 	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.25);
+}
+
+.card .card-title {
+	font-weight: bolder;
 }
 
 #team .card img {
 	height: 350px;
-	object-fit: cover;
 }
 
 @media only screen and (max-width: 992px) {
@@ -105,10 +112,13 @@ section{
 	#team .card img {
 	height: 400px;
 }
-}
+	#services .card {
+	max-width: 700px;
+	}
 
-.card .card-title {
-	font-weight: bolder;
+	#services .card {
+	min-height: 400px;
+	}
 }
 
 #team .card .card-text {
@@ -122,7 +132,7 @@ section{
 }
 
 #services {
-	background-color: #fafafa;
+	background-color: #f5f5f5;
 }
 
 #services .card {
@@ -130,16 +140,8 @@ section{
 	min-height: 300px;
 }
 
-
-@media only screen and (max-width: 992px) {
-	#services .card {
-	max-width: 700px;
-	}
-}
-
 #services .card img {
 	height: 300px;
-	object-fit: cover;
 }
 
 #programes .owl-nav {
@@ -147,7 +149,15 @@ section{
 }
 
 #programes .owl-carousel .item {
-	margin: 0 10px;
+	margin: 10px;
+}	
+
+#programes .card {
+	min-height: 450px;
+}
+
+#programes .card img {
+	height: 450px;
 }
 
 #news {
